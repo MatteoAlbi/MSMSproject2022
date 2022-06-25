@@ -118,11 +118,11 @@
 </Input>
 </Group>
 <Group labelreference="L7" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+<Input><Text-field style="Text" layout="Normal">As last, modified constraint system for assembly, Fmax = 320</Text-field>
 </Input>
 </Group>
 <Group labelreference="L8" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_opt4 := {LP = 1/20, LT1 = 0.0327899070053307, LT2 = 0.0678163376720598, LT3 = 0.0357245116167032, LW = 0.1520000000, Lrod = 0.0233357740210272, XT = 0.214777671358303, XW = 0.3650000000, YP = 0.108854759347394, YT = 0.0771880952666485, YW = 0.1450000000}</Text-field>
 </Input>
 </Group>
 <Group labelreference="L9" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
