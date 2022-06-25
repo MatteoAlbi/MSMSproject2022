@@ -94,15 +94,15 @@
 </Group>
 <Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Optimized values</Text-field></Title>
 <Group labelreference="L10" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Old bounds (1..15 cm for triangle and rod), Fmax = 335</Text-field>
+<Input><Text-field style="Text" layout="Normal">Old bounds (1..15 cm for triangle and rod), Fmax = 335; PROBLEM: too big triangle</Text-field>
 </Input>
 </Group>
 <Group labelreference="L2" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_opt1 := {LP = 1/20, LT1 = 0.0910766535103467, LT2 = 0.136465055143045, LT3 = 0.135950729433682, LW = 0.1520000000, Lrod = 0.135788251051503, XT = 0.192760827270985, XW = 0.3650000000, YP = 0.134695294585889, YT = 0.0456748345016333, YW = 0.1450000000}</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_opt1 := {LP = 1/20, LT1 = 0.0910766535103467, LT2 = 0.136465055143045, LT3 = 0.135950729433682, LW = 0.1520000000, Lrod = 0.135788251051503, XT = 0.192760827270985, XW = 0.3650000000, YP = 0.134695294585889, YT = 0.0456748345016333, YW = 0.1450000000} </Text-field>
 </Input>
 </Group>
 <Group labelreference="L11" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">New bounds (1..10 cm for traingle and rod), Fmax = 335</Text-field>
+<Input><Text-field style="Text" layout="Normal">New bounds (1..10 cm for traingle and rod), Fmax = 335; PROBLEM: too big triangle -&gt; max height greater then YW</Text-field>
 </Input>
 </Group>
 <Group labelreference="L4" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -110,7 +110,7 @@
 </Input>
 </Group>
 <Group labelreference="L5" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Added cost on dimensions, Fmax = 335</Text-field>
+<Input><Text-field style="Text" layout="Normal">Added cost on dimensions, Fmax = 335; PROBLEM: too many singular configs</Text-field>
 </Input>
 </Group>
 <Group labelreference="L6" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -118,7 +118,7 @@
 </Input>
 </Group>
 <Group labelreference="L7" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">As last, modified constraint system for assembly, Fmax = 320</Text-field>
+<Input><Text-field style="Text" layout="Normal">As last, modified constraint system for assembly (no more based on solution of Phi, but on distances and angles), Fmax = 320; PROBLEM: bifurcation </Text-field>
 </Input>
 </Group>
 <Group labelreference="L8" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -126,8 +126,22 @@
 </Input>
 </Group>
 <Group labelreference="L9" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+<Input><Text-field style="Text" layout="Normal">Added constraint about YP; PROBLEM: PtC outside from wing</Text-field>
 </Input>
+</Group>
+<Group labelreference="L12" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_opt5 := {LP = 1/20, LT1 = 0.0475915693738737, LT2 = 0.0604792372749154, LT3 = 0.0261747648350026, LW = 0.1520000000, Lrod = 0.0590040586129424, XT = 0.180223290724180, XW = 0.3650000000, YP = 0.110695527561968, YT = 0.0845207627251159, YW = 0.1450000000}</Text-field>
+</Input>
+</Group>
+<Group labelreference="L13" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">Added constr about PtC inside the wing</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L14" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_opt6 := {LP = 1/20, LT1 = 0.0547629307412899, LT2 = 0.0628830478452305, LT3 = 0.0276519369279275, LW = 0.1520000000, Lrod = 0.0277083943215744, XT = 0.190814215147396, XW = 0.3650000000, YP = 0.113828637115020, YT = 0.0861609522117834, YW = 0.1450000000}</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEqZGF0YV9vcHQ2RicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2Ji1GIzY6LUYjNiYtRiw2JVEjTFBGJ0YvRjItRjY2LVEpJmVxdWFscztGJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUkmbWZyYWNHRiQ2KC1JI21uR0YkNiRRIjFGJ0Y5LUZqbjYkUSMyMEYnRjkvJS5saW5ldGhpY2tuZXNzR0Zcby8lK2Rlbm9tYWxpZ25HUSdjZW50ZXJGJy8lKW51bWFsaWduR0Zkby8lKWJldmVsbGVkR0Y9RjktRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTlEsMC4zMzMzMzMzZW1GJy1GIzYmLUYsNiVRJExUMUYnRi9GMkZZLUZqbjYkUTMwLjA1NDc2MjkzMDc0MTI4OTlGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSRMVDJGJ0YvRjJGWS1Gam42JFEzMC4wNjI4ODMwNDc4NDUyMzA1RidGOUY5RmlvLUYjNiYtRiw2JVEkTFQzRidGL0YyRlktRmpuNiRRMzAuMDI3NjUxOTM2OTI3OTI3NUYnRjlGOUZpby1GIzYmLUYsNiVRI0xXRidGL0YyRlktRmpuNiRRLTAuMTUyMDAwMDAwMEYnRjlGOUZpby1GIzYmLUYsNiVRJUxyb2RGJ0YvRjJGWS1Gam42JFEzMC4wMjc3MDgzOTQzMjE1NzQ0RidGOUY5RmlvLUYjNiYtRiw2JVEjWFRGJ0YvRjJGWS1Gam42JFEyMC4xOTA4MTQyMTUxNDczOTZGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSNYV0YnRi9GMkZZLUZqbjYkUS0wLjM2NTAwMDAwMDBGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSNZUEYnRi9GMkZZLUZqbjYkUTIwLjExMzgyODYzNzExNTAyMEYnRjlGOUZpby1GIzYmLUYsNiVRI1lURidGL0YyRlktRmpuNiRRMzAuMDg2MTYwOTUyMjExNzgzNEYnRjlGOUZpby1GIzYmLUYsNiVRI1lXRidGL0YyRlktRmpuNiRRLTAuMTQ1MDAwMDAwMEYnRjlGOS8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjkvJSVvcGVuR1EnJmxjdWI7RicvJSZjbG9zZUdRJyZyY3ViO0YnRjk=">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSpkYXRhX29wdDZHRig8LS9JI0xQR0YoIyIiIiIjPy9JJExUMUdGKCQiMCoqR1QyJEh3YSEjOy9JJExUMkdGKCQiMDBCWHkvJClHJ0Y4L0kkTFQzR0YoJCIwdiN6I3AkPmxGRjgvSSNMV0dGKCQiKysrKz86ISM1L0klTHJvZEdGKCQiMFdkQFZSM3gjRjgvSSNYVEdGKCQiMCdSWl5AOTM+ISM6L0kjWFdHRigkIisrKytdT0ZFL0kjWVBHRigkIjA/XTZQJ0dRNkZOL0kjWVRHRigkIjBNeTZBJjQ7JylGOC9JI1lXR0YoJCIrKysrXTlGRTcjRi4=</Equation></Text-field>
+</Output>
 </Group>
 </Section>
 <Group labelreference="L3" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
