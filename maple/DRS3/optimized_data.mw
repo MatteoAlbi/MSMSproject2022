@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Worksheet>
-<Version major="2021" minor="1"/>
+<Version major="2022" minor="0"/>
 <Label-Scheme value="2" prefix=""/>
 <View-Properties presentation="false" autoexpanding_sections="true" UserProfileName="Maple Default Profile" NumericFormat-ApplyInteger="true" NumericFormat-ApplyRational="true" NumericFormat-ApplyExponent="false" editable="true">
 </View-Properties>
@@ -146,7 +146,7 @@
 </Output>
 </Group>
 <Group labelreference="L13" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Added constr about PtC inside the wing <Font opaque="true" background="[0,255,0]">BEST SOLUTION </Font> force sligthly over limit:  </Text-field>
+<Input><Text-field style="Text" layout="Normal">Added constr about PtC inside the wing <Font opaque="true" background="[0,255,0]">BEST SOLUTION </Font> (force sligthly over limit):  </Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L14" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -156,7 +156,7 @@
 </Output>
 </Group>
 <Group labelreference="L15" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Fixed interpolated wing torque</Text-field>
+<Input><Text-field style="Text" layout="Normal">new interpolated wing torque, bifurcations in the middle</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L16" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -165,12 +165,32 @@
 <Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEqZGF0YV9vcHQ3RicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2Ji1GIzY6LUYjNiYtRiw2JVEjTFBGJ0YvRjItRjY2LVEpJmVxdWFscztGJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUkmbWZyYWNHRiQ2KC1JI21uR0YkNiRRIjFGJ0Y5LUZqbjYkUSMyMEYnRjkvJS5saW5ldGhpY2tuZXNzR0Zcby8lK2Rlbm9tYWxpZ25HUSdjZW50ZXJGJy8lKW51bWFsaWduR0Zkby8lKWJldmVsbGVkR0Y9RjktRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTlEsMC4zMzMzMzMzZW1GJy1GIzYmLUYsNiVRJExUMUYnRi9GMkZZLUZqbjYkUTMwLjAzNjIzNTQ0NjY0MTk3NzRGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSRMVDJGJ0YvRjJGWS1Gam42JFEzMC4wNTI0OTE4MzUzNTcwMjA2RidGOUY5RmlvLUYjNiYtRiw2JVEkTFQzRidGL0YyRlktRmpuNiRRMzAuMDIyOTU3MjcxMTYzODk1NEYnRjlGOUZpby1GIzYmLUYsNiVRI0xXRidGL0YyRlktRmpuNiRRLTAuMTUyMDAwMDAwMEYnRjlGOUZpby1GIzYmLUYsNiVRJUxyb2RGJ0YvRjJGWS1Gam42JFEzMC4wMzQ0MTQzNjA5MDg0MzY5RidGOUY5RmlvLUYjNiYtRiw2JVEjWFRGJ0YvRjJGWS1Gam42JFEyMC4yMDg5Mjc0NzI1NjA3NjBGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSNYV0YnRi9GMkZZLUZqbjYkUS0wLjM2NTAwMDAwMDBGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSNZUEYnRi9GMkZZLUZqbjYkUTIwLjEyNjE2ODE3ODk1NzEyNUYnRjlGOUZpby1GIzYmLUYsNiVRI1lURidGL0YyRlktRmpuNiRRMzAuMDkyNjY2Mzg0NjEzNjg0NkYnRjlGOUZpby1GIzYmLUYsNiVRI1lXRidGL0YyRlktRmpuNiRRLTAuMTQ1MDAwMDAwMEYnRjlGOS8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjkvJSVvcGVuR1EnJmxjdWI7RicvJSZjbG9zZUdRJyZyY3ViO0YnRjk=">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSpkYXRhX29wdDdHRig8LS9JI0xQR0YoIyIiIiIjPy9JJExUMUdGKCQiMHUoPmtZYUJPISM7L0kkTFQyR0YoJCIwMS1kYCQ9XF9GOC9JJExUM0dGKCQiMGEqUTtycyZII0Y4L0kjTFdHRigkIisrKys/OiEjNS9JJUxyb2RHRigkIjBwVjM0TzlXJEY4L0kjWFRHRigkIjBnMmNzdSMqMyMhIzovSSNYV0dGKCQiKysrK11PRkUvSSNZUEdGKCQiMERyJip5Im9oN0ZOL0kjWVRHRigkIjBZbzhZUW1FKkY4L0kjWVdHRigkIisrKytdOUZFNyNGLg==</Equation></Text-field>
 </Output>
 </Group>
-<Group labelreference="L19" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group labelreference="L22" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal">Refined force constraint (NO VEL RATIOS)</Text-field>
 </Input>
 </Group>
-<Group labelreference="L18" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group labelreference="L21" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_opt8 := {LP = 1/20, LT1 = 0.0483678968628847, LT2 = 0.0874311799007647, LT3 = 0.0529473819889221, LW = 0.1520000000, Lrod = 0.0602783298778935, XT = 0.165532852064878, XW = 0.3650000000, YP = 0.133693883300803, YT = 0.0735901319554087, YW = 0.1450000000}</Text-field>
+</Input>
+</Group>
+<Group labelreference="L27" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">Refined force constraint with vel ratios:  no solutions for theta W ~ 0.1</Text-field>
+</Input>
+</Group>
+<Group labelreference="L26" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_opt9 := {LP = 1/20, LT1 = 0.0403520004077303, LT2 = 0.0549087203464657, LT3 = 0.0166698287289995, LW = 0.1520000000, Lrod = 0.0440478987477341, XT = 0.219048661589374, XW = 0.3650000000, YP = 0.137622530730682, YT = 0.0900912796535345, YW = 0.1450000000}</Text-field>
+</Input>
+</Group>
+<Group labelreference="L29" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">Refined force constraint with vel ratios and margins on constraints</Text-field>
+</Input>
+</Group>
+<Group labelreference="L28" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_opt10 := {LP = 1/20, LT1 = 0.0402700813123475, LT2 = 0.0534220827249863, LT3 = 0.0190899932523043, LW = 0.1520000000, Lrod = 0.0362466902037972, XT = 0.209883092514750, XW = 0.3650000000, YP = 0.131079071681676, YT = 0.0922617591555381, YW = 0.1450000000}</Text-field>
+</Input>
+</Group>
+<Group labelreference="L24" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"></Text-field>
 </Input>
 </Group>
 </Section>
