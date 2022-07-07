@@ -236,9 +236,8 @@ classdef DRS3 < DAC_ODEclass
           vP = vars__(4);
           omegaT = vars__(5);
           omegaW = vars__(6);
-          vP__d = vars__(7);
-          omegaT__d = vars__(8);
-          omegaW__d = vars__(9);
+          lambda1 = vars__(7);
+          lambda2 = vars__(8);
     
           % evaluate function
           t1 = -YP + YT;
@@ -268,6 +267,7 @@ classdef DRS3 < DAC_ODEclass
           res__Phi(2) = res__2;
     
         end
+
 
         function res__rhs = rhs( self, t, vars__ )
 
