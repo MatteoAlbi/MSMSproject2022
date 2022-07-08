@@ -17,8 +17,12 @@ xE = 0.365;
 yE = 0.145;
 m_piston = 0.04712388981;
 ForcePiston = 1300;
+<<<<<<< HEAD
 TorqueWing = Torque_wing_interpolated(0);
 ode   = DRS2(Iz_flap, L0, L2, L3, L4, LMP, Lbase, g, m_flap, xE, yE, m_piston, ForcePiston, TorqueWing);
+=======
+ode   = DRS2(Iz_flap, L0, L2, L3, L4, LMP, Lbase, g, m_flap, xE, yE, m_piston, ForcePiston);
+>>>>>>> 74afc829bec525ae989eb80656c60da82a3e5507
 
 %% Initialize the solver class
 solver = ExplicitEuler();
