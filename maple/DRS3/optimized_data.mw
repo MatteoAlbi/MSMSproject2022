@@ -146,7 +146,7 @@
 </Output>
 </Group>
 <Group labelreference="L13" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Added constr about PtC inside the wing <Font opaque="true" background="[0,255,0]">BEST SOLUTION </Font> (force sligthly over limit):  </Text-field>
+<Input><Text-field style="Text" layout="Normal">Added constr about PtC inside the wing (force sligthly over limit):  </Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L14" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -182,12 +182,14 @@
 </Input>
 </Group>
 <Group labelreference="L29" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Refined force constraint with vel ratios and margins on constraints</Text-field>
+<Input><Text-field style="Text" layout="Normal">Refined force constraint with vel ratios and margins on constraints <Font opaque="true" background="[0,255,0]">BEST SOLUTION</Font></Text-field>
 </Input>
 </Group>
-<Group labelreference="L28" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-input="false" labelreference="L28" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">data_opt10 := {LP = 1/20, LT1 = 0.0402700813123475, LT2 = 0.0534220827249863, LT3 = 0.0190899932523043, LW = 0.1520000000, Lrod = 0.0362466902037972, XT = 0.209883092514750, XW = 0.3650000000, YP = 0.131079071681676, YT = 0.0922617591555381, YW = 0.1450000000}</Text-field>
 </Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVErZGF0YV9vcHQxMEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiYtRiM2Oi1GIzYmLUYsNiVRI0xQRidGL0YyLUY2Ni1RKSZlcXVhbHM7RidGOUY7Rj5GQEZCRkRGRkZIRkpGTS1JJm1mcmFjR0YkNigtSSNtbkdGJDYkUSIxRidGOS1Gam42JFEjMjBGJ0Y5LyUubGluZXRoaWNrbmVzc0dGXG8vJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGZG8vJSliZXZlbGxlZEdGPUY5LUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkgvRktRJjAuMGVtRicvRk5RLDAuMzMzMzMzM2VtRictRiM2Ji1GLDYlUSRMVDFGJ0YvRjJGWS1Gam42JFEzMC4wNDAyNzAwODEzMTIzNDc1RidGOUY5RmlvLUYjNiYtRiw2JVEkTFQyRidGL0YyRlktRmpuNiRRMzAuMDUzNDIyMDgyNzI0OTg2M0YnRjlGOUZpby1GIzYmLUYsNiVRJExUM0YnRi9GMkZZLUZqbjYkUTMwLjAxOTA4OTk5MzI1MjMwNDNGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSNMV0YnRi9GMkZZLUZqbjYkUS0wLjE1MjAwMDAwMDBGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSVMcm9kRidGL0YyRlktRmpuNiRRMzAuMDM2MjQ2NjkwMjAzNzk3MkYnRjlGOUZpby1GIzYmLUYsNiVRI1hURidGL0YyRlktRmpuNiRRMjAuMjA5ODgzMDkyNTE0NzUwRidGOUY5RmlvLUYjNiYtRiw2JVEjWFdGJ0YvRjJGWS1Gam42JFEtMC4zNjUwMDAwMDAwRidGOUY5RmlvLUYjNiYtRiw2JVEjWVBGJ0YvRjJGWS1Gam42JFEyMC4xMzEwNzkwNzE2ODE2NzZGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSNZVEYnRi9GMkZZLUZqbjYkUTMwLjA5MjI2MTc1OTE1NTUzODFGJ0Y5RjlGaW8tRiM2Ji1GLDYlUSNZV0YnRi9GMkZZLUZqbjYkUS0wLjE0NTAwMDAwMDBGJ0Y5RjkvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5LyUlb3BlbkdRJyZsY3ViO0YnLyUmY2xvc2VHUScmcmN1YjtGJ0Y5">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SStkYXRhX29wdDEwR0YoPC0vSSNMUEdGKCMiIiIiIz8vSSRMVDFHRigkIjB2TTc4M3EtJSEjOy9JJExUMkdGKCQiMGopXHMjM0FNJkY4L0kkTFQzR0YoJCIwVklfSyoqKjM+RjgvSSNMV0dGKCQiKysrKz86ISM1L0klTHJvZEdGKCQiMHN6Li1wWWkkRjgvSSNYVEdGKCQiMF1aXiM0JCkpNCMhIzovSSNYV0dGKCQiKysrK11PRkUvSSNZUEdGKCQiMHc7b3IhejU4Rk4vSSNZVEdGKCQiMCJRYjpmPEUjKkY4L0kjWVdHRigkIisrKytdOUZFNyNGLg==</Equation></Text-field>
+</Output>
 </Group>
 <Group labelreference="L24" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal"></Text-field>
