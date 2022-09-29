@@ -1,8 +1,7 @@
 # MSMS project 2022: DRS simulation
 
-Study project for the course Modeling and Simulation of Mechatronic Systems, held by professor Francesco Biral, University of Trento.
-
-Link to project final presentation: [link](https://1drv.ms/p/s!Aj8QjUFmeyl8gcMmEu5Ztam8ViHDSw?e=iIYkVp).
+Study project for the course Modeling and Simulation of Mechatronic Systems, held by professor Francesco Biral, University of Trento.  
+Final presentation: [file](/Project%20presentation.pptx).
 
 ## Introduciton
 
